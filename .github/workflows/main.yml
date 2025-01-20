@@ -4,8 +4,8 @@ name: "打卡"
 on:
   workflow_dispatch:  # 手动触发
   schedule:
-    - cron: "50 23 * * *" 
-    - cron: "50 9 * * *"  # UTC 09:00 / 北京时间 17:00
+    - cron: "15 0 * * *" 
+    - cron: "55 9 * * *"  # UTC 09:00 / 北京时间 17:00
 
 # 配置并发控制，避免任务重叠执行
 concurrency:
